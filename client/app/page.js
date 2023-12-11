@@ -1,5 +1,5 @@
 async function getData() {
-  const res = await fetch(' https://afe5-14-139-241-220.ngrok.io/contact/', {
+  const res = await fetch('https://metacontact.adaptable.app//contact/', {
     cache: 'no-store',
   });
   if (!res.ok) {
