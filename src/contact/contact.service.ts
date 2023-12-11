@@ -17,7 +17,7 @@ export class ContactService {
     }   
 
     async getContact(){
-        const contacts = await this.contactModel.find().exec();
+        let contacts = await this.contactModel.find().exec();
         return contacts;
     }
 

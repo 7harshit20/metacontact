@@ -34,7 +34,7 @@ export class ContactController {
                 if (str.charCodeAt(i) > 47 && str.charCodeAt(i) < 58)
                 phone = phone + str[i];
             }
-            // console.log('from controller', name, phone, confirmed );
+            console.log('from controller', name, phone, confirmed );
             const genid = await this.ContactService.addContact(name, phone);
             return {id: genid};
         } catch (error) {
