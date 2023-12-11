@@ -20,4 +20,8 @@ export class ContactService {
         const contacts = await this.contactModel.find().exec();
         return contacts;
     }
+
+    // async moraliswebhook(){
+
+    // }
 }
